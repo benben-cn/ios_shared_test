@@ -44,11 +44,12 @@ jobs:
         pwd
         ls -la
         zip -r build.zip ${{github.workspace}}/build
+        ls
 
     - name: Upload Release Asset
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: ${{ github.workspace }}
+        tag_name: v1.0.0
         files: |
-          ls
           ${{ github.workspace }}/build.zip
+          
