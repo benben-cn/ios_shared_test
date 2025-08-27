@@ -48,7 +48,7 @@ jobs:
     - name: Upload Release Asset
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: ${{ github.workspace || build }}
+        tag_name: ${{ github.workspace }}
         files: |
           ls
           ${{ github.workspace }}/build.zip
