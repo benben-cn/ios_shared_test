@@ -97,7 +97,7 @@ if(PLATFORM MATCHES "MAC.*")
 endif()
 
 # Debug symbols set in XCode project
-set_xcode_property(example GCC_GENERATE_DEBUGGING_SYMBOLS YES "All")
+#set_xcode_property(example GCC_GENERATE_DEBUGGING_SYMBOLS YES "All")
 
 # Installation
 if(PLATFORM MATCHES "MAC.*")
