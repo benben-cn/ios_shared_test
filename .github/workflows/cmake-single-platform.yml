@@ -43,7 +43,7 @@ jobs:
       run: |
         pwd
         ls -la
-        zip -r ${{github.workspace}}/build.zip ${{github.workspace}}/build
+        zip -r build.zip ${{github.workspace}}/build
 
     - name: Upload Release Asset
       uses: softprops/action-gh-release@v2
