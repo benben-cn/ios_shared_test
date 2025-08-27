@@ -7,7 +7,11 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+permissions:
+  contents: write   # 允许写 Release
+  actions: read     # 可选，允许读 Actions
+  
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
   BUILD_TYPE: Release
